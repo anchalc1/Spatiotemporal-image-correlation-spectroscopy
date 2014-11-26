@@ -1,4 +1,16 @@
 function [fitParams,flag] = fit_gaussian(gData,coords)
+%  fit_gaussian finds the best fit 2D Gaussian fit.
+%
+% fit_gaussian uses lsqcurvefit to find a Gaussian fit for GDATA plotted
+% versus coordinates COORDS. 
+% GDATA is a 2D matrix
+% COORDS = [X,Y] X and Y are 2D arrays of the type returned by meshgrid
+%
+% FITPARAMS = = [a,sigma,b,xd,yd]
+% FLAG is the flag returned by lsqcurvefit. See lsqcurvefit documentation.
+%
+% Copyright (c) Molly J. Rossow 2014
+
 X = coords(:,:,1);
 Y = coords(:,:,2);
 

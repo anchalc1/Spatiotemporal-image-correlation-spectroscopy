@@ -2,7 +2,7 @@ function sticsG = calc_stics(matrix3Dim,shifts,flag)
 % calc_stics calculates the spatial temporal image correlation spectroscopy
 % for a series of frames. 
 %
-% STICSG= calc_stics(MATRIX3DIM, SHIFTS, FLAG) 
+% STICSG - calc_stics(MATRIX3DIM, SHIFTS, FLAG) 
 % MATRIX3DIM - 3 dimensional matrix, [y,x,time] (x and y must be even and
 % equal to each other)
 % SHIFTS - integer, number of STICS shifts to calculate 
